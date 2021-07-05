@@ -1,0 +1,30 @@
+.header {
+    padding: 15px 0;
+    position: relative;
+    .logo {
+        cursor: pointer;
+        display: table;
+        margin: 0 auto;
+    }
+    .logo img {
+    }
+    .backBtn {
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -10px;
+        background-image: url("../../assets/img/arrow_back.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 11px;
+        height: 19px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+}

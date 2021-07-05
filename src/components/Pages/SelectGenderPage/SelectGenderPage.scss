@@ -1,0 +1,56 @@
+.genderSelect {
+  display: flex;
+  justify-content: space-between;
+  .item {
+    position: relative;
+    width: calc(50% - 15px);
+    padding: 15px;
+    input {
+      display: none;
+      &:checked {
+        & + label {
+          background-color: #d1d0d8;
+        }
+      }
+    }
+    label {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      background-color: #f3f2f9;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      &:hover {
+        background-color: #d1d0d8;
+      }
+    }
+    .pic {
+      width: 100%;
+      height: 318px;
+      background-position: center;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      position: relative;
+    }
+    .txt {
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 20px;
+      text-align: center;
+      display: block;
+      color: #1a1a1a;
+      width: 100%;
+      position: relative;
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.finishList {
+    max-height: 566px;
+    overflow: auto;
+    .item {
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        & + .item {
+            border-top: solid 1px #000;
+        }
+        .tit {
+            font-weight: 300;
+        }
+        .txt {
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.progressList {
+    display: flex;
+    justify-content: space-between;
+    .line {
+        height: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px;
+        background-color: #f3f2f9;
+        width: calc((100% / 13) - 5px);
+        &.active {
+            background: linear-gradient(225deg, #7652b2 0%, #605c98 100%);
+        }
+    }
+}
